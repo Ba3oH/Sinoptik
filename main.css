@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial,helvetica,sans-serif;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.wrapper {
+  background-color: #fff;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.logo {
+  float: left;
+}
+
+.form-search {
+  float: left;
+  margin: 15px 0 0 20px;
+}
+
+.form-search input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  float: left;
+  height: 26px;
+  padding: 5px;
+  width: 300px;
+}
+
+.form-search button {
+  background-image: url('https://sinst.fwdcdn.com/img/newImg/buttonSearch.png ');
+  background-position: -2px -1px;
+  border-color: #ccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  height: 26px;
+  float: left;
+  margin-left: -54px;
+  width: 54px;
+}
+
+.form-search button:hover {
+  background-position: -2px center;
+}
+
+
+.form-search .text-small a {
+  border-bottom: 1px dotted #666;
+  color: #666;
+  font-size: 12px;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.page-head {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.page-head-left {
+  float: left;
+}
+
+.page-head-right{
+  float: right;
+}
+
+.page-headline {
+  color: #555;
+  font-weight: 400;
+  margin: 0 0 2px;
+}
+
+.page-headline b {
+  color: #333;
+}
+
+.page-subline {
+  color: #555;
+  margin: 0;
+}
+
+.page-head-right {
+  float: right;
+  font-size: 12px;
+}
+
+.page-head-right span {
+  background-image: url('https://sinst.fwdcdn.com/img/newImg/spr4.png ');
+  color: #fff;
+  width: 60px;
+  display: inline-block;
+  line-height: 19px;
+  height: 24px;
+  text-align: center;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-item {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  float: left;
+  padding: 10px;
+  position: relative;
+  margin-left: -1px;
+  text-align: center;
+  width: 94px;
+}
+
+.tabs-item.active::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  display: block;
+  height: 3px;
+  margin-top: -1px;
+}
+
+.tabs-item:first-child {
+  margin-left: 0;
+}
+
+.tabs-content {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  padding: 10px;
+}
+
+.tabs-content-underlined {
+  border-bottom: 1px dotted #666;
+  font-size: 12px;
+}
+.date-style {
+  margin-top: 5px;
+  color: black;
+  font-size: 24px;
+}
+
+.date-style-holiday {
+  margin-top: 5px;
+  color: red;
+  font-size: 24px;
+}
+
+
+.image {
+  background-image: url('https://sinst.fwdcdn.com/img/weatherImg/s2-m.png');
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.sun {
+  background-position: 360px 40px;
+}
+
+.sun-cloud1 {
+  background-position: 360px 0px;
+}
+
+.sun-cloud2 {
+  background-position: 360px 320px;
+}
+
+.cloud {
+  background-position: 360px 80px;
+}
+
+.rain1 {
+  background-position: 320px 80px;
+}
+
+.rain2 {
+  background-position: 120px 80px;
+}
+
+.thunderstorm {
+  background-position: 40px 80px;
+}
+
+.tab-text1 {
+  color: grey;
+  font-size: 11px;
+}
+
+.tab-text2 {
+  color: black;
+  font-size: 17px;
+}
+.info-block1 {
+  float:left;
+  width: 50%;
+}
+
+.info-block2 {
+  float:left;
+  width: 50%;
+}

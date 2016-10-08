@@ -1,271 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>HTML5</title>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js "></script>
-</script>
-<![endif]-->
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
 
-body {
-  font-family: Verdana,sans-serif;
-  font-size: 0.9em;
-  margin: 0;
-}
+    <div class="wrapper">
 
-.clearfix::after {
-  display: table;
-  content: '';
-  clear: both;
-}
-
-.wrapper {
-  background-color: #fff;
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1000px;
-}
-
-.header {
-  padding: 15px 0;
-}
-
-.logo {
-  float: left;
-}
-
-.form-search {
-  float: left;
-  margin: 15px 0 0 20px;
-}
-
-.form-search input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px; 
-  float: left;
-  height: 26px;
-  padding: 5px;
-  width: 300px;
-}
-
-.form-search button {
-  background-image: url('https://sinst.fwdcdn.com/img/newImg/buttonSearch.png ');
-  background-position: -2px -1px;
-  border-color: #ccc;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  height: 26px;
-  float: left;
-  margin-left: -54px;
-  width: 54px;
-}
-
-.form-search button:hover {
-  background-position: -2px center;
-}
-
-
-.form-search .text-small a {
-  border-bottom: 1px dotted #666;
-  color: #666;
-  font-size: 12px;
-  margin-top: 3px;
-  text-decoration: none;
-}
-
-.page-head {
-  padding: 0 15px;
-  margin-bottom: 15px;
-}
-
-.page-head-left {
-  float: left;
-}
-
-.page-head-right{
-  float: right;
-}
-
-.page-headline {
-  color: #555;
-  font-weight: 400;
-  margin: 0 0 2px;
-}
-
-.page-headline b {
-  color: #333;
-}
-
-.page-subline {
-  color: #555;
-  margin: 0;
-}
-
-.page-head-right {
-  float: right;
-  font-size: 12px;
-}
-
-.page-head-right span {
-  background-image: url('https://sinst.fwdcdn.com/img/newImg/spr4.png ');
-  color: #fff;
-  width: 60px;
-  display: inline-block;
-  line-height: 19px;
-  height: 24px;
-  text-align: center;
-}
-
-.tabs {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tabs-item {
-  border-color: #ccc;
-  border-style: solid;
-  border-width: 1px 1px 0 1px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  float: left;
-  padding: 10px;
-  position: relative;
-  margin-left: -1px;
-  text-align: center;
-  width: 94px;
-}
-
-.tabs-item.active::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  background-color: #fff;
-  width: 100%;
-  left: 0;
-  display: block;
-  height: 3px;
-  margin-top: -1px;
-}
-
-.tabs-item:first-child {
-  margin-left: 0;
-}
-
-.tabs-content {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-top-left-radius: 0;
-  padding: 10px;
-}
-</style>
-</head>
-<body>
-
-<div class="wrapper">
-
-<header class="header clearfix">
-  <a href="#" class="logo">
-    <img src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo.png " alt="Logo">
-  </a>
-  <form class="form-search">
-     <div class="clearfix">
-      <input type="text" placeholder="Введіть назву міста">
-      <button></button>
-    </div>
-    <div class="text-small">
-      <a href="#">
-        Київ
+    <header class="header clearfix">
+      <a href="#" class="logo">
+        <img src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo.png " alt="Logo">
       </a>
-    </div>
-  </form>
-</header>
+      <form class="form-search">
+         <div class="clearfix">
+          <input type="text" placeholder="Введіть назву міста">
+          <button></button>
+        </div>
+        <div class="text-small">
+          <a href="#">Київ</a>
+        </div>
+      </form>
+    </header>
 
-<main class="main">
-  <div class="page-head clearfix">
-    <div class="page-head-left">
-      <h2 class="page-headline">Погода <b>у Києві</b></h2>
-      <p class="page-subline">Столиця України</p>
-    </div>
-    <div class="page-head-right">
-      <span>7 днів</span>
-      <a href="#">10 днів</a>
-      <div>
-        <a href="#">обрати інше місто</a>
+    <main class="main">
+      <div class="page-head clearfix">
+        <div class="page-head-left">
+          <h2 class="page-headline">Погода <b>у Києві</b></h2>
+          <p class="page-subline">Столиця України</p>
+        </div>
+        <div class="page-head-right">
+          <span>7 днів</span>
+          <a href="#">10 днів</a>
+          <div>
+            <a href="#">обрати інше місто</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="main-block">
-    <ul class="tabs clearfix">
-      <li class="tabs-item active">
-        <span>П'ятниця</span>
-        <span>7</span>
-        <span>жовтня</span>
-        <img src="" alt="Хмарка">
-        <div class="clearfix">
-          <span>
-            <span>
-             мін.
-            </span>
-            <span>
-             +6°
-            </span>
-          </span>
-          <span>
-           <span>
-             макс.
-            </span>
-            <span>
-             +15°
-            </span>
-          </span>
+      <div class="main-block">
+        <ul class="tabs clearfix">
+          <li class="tabs-item active">
+            <div>
+              <span class="tabs-content-underlined">Понеділок</span>
+            </div>
+            <div class="date-style">03</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image sun"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+4°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+8°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">Вівторок</span>
+            </div>
+            <div class="date-style">04</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image sun-cloud1"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+7°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+8°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">Середа</span>
+            </div>
+            <div class="date-style">05</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image sun-cloud2"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+7°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+9°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">Четвер</span>
+            </div>
+            <div class="date-style">06</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image cloud"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+7°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+10°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">П'ятниця</span>
+            </div>
+            <div class="date-style">07</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image rain1"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+5°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+9°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">Субота</span>
+            </div>
+            <div class="date-style-holiday">08</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image rain2"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+2°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+9°</div>
+              </div>
+            </div>
+          </li>
+          <li class="tabs-item">
+            <div>
+              <span class="tabs-content-underlined">Неділя</span>
+            </div>
+            <div class="date-style-holiday">09</div>
+            <div>
+              <span class="tabs-content-underlined">жовтня</span>
+            </div>
+            <div class="image thunderstorm"></div>
+            <div class="clearfix">
+              <div class="info-block2">
+                <div class="tab-text1">мін.</div>
+                <div class="tab-text2">+1°</div>
+              </div>
+              <div class="info-block2">
+                <div class="tab-text1">макс.</div>
+                <div class="tab-text2">+6°</div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="tabs-content">
+          Погода сьогодні о 00:00
         </div>
-      </li>
-      <li class="tabs-item">
-        <span>П'ятниця</span>
-        <span>7</span>
-        <span>жовтня</span>
-        <img src="" alt="Хмарка">
-        <div class="clearfix">
-          <span>
-            <span>
-             мін.
-            </span>
-            <span>
-             +6°
-            </span>
-          </span>
-          <span>
-           <span>
-             макс.
-            </span>
-            <span>
-             +15°
-            </span>
-          </span>
-        </div>
-      </li>
-    </ul>
-    <div class="tabs-content">
-      Погода сьогодні о 00:00
-    </div>
-  </div>
-</main>
+      </div>
+    </main>
 
-<footer>
-  <p>Всі права належать &copy; 2010-2016 sinoptik.ua. Партнери проекту: Український Гідрометцентр, <img src="https://sinst.fwdcdn.com/img/partners/foreca_logo.png" alt="FORECA">.</p>
-</footer>
+    <footer>
+      <p>Всі права належать &copy; 2010-2016 sinoptik.ua. Партнери проекту: Український Гідрометцентр, <img src="https://sinst.fwdcdn.com/img/partners/foreca_logo.png" alt="FORECA">.</p>
+    </footer>
 
-<div>
+    <div>
 
-</body>
+  </body>
 </html>
