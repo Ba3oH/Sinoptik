@@ -266,3 +266,73 @@ body {
 .wind-details1 {
   color: #777;
 }
+
+.tabs-content-right {
+  float:left;
+  text-align: center;
+}
+
+.img-p {
+  height: 30px;
+  width: 30px;
+  background-image: url("https://sinst.fwdcdn.com/img/weatherImg/s2-s.png");
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.img-position1 {
+
+    background-position: 180px 210px;
+}
+
+.img-position2 {
+
+    background-position: 0px 30px;
+}
+
+.img-position3 {
+
+    background-position: 0px 30px;
+}
+
+.img-position4 {
+    background-position: 30px 0px;
+}
+
+.img-position5 {
+    background-position: 30px 0px;
+}
+}
+
+.img-position6 {
+    background-position: 0px 30px;
+}
+
+.img-position7 {
+    background-position: 0px 60px;
+}
+
+.img-position8 {
+    background-position: -180px -210px;
+}
+
+.day-part {
+  height: 23px;
+  font-size: 12px;
+}
+
+.time-part {
+  font-size: 11px;
+  color: #777;
+}
+
+.temperature {
+  font-size: 18px;
+}
+
+.temperature2 {
+  font-size:12px;
+  color: #777;
+  font-weight: 700;
+  height: 23px;
+}
