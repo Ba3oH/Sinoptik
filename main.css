@@ -46,7 +46,7 @@ body {
 }
 
 .form-search button {
-  background-image: url('https://sinst.fwdcdn.com/img/newImg/buttonSearch.png ');
+  background-image: url('https://sinst.fwdcdn.newImg/buttonSearch.png ');
   background-position: -2px -1px;
   border-color: #ccc;
   border-top-right-radius: 4px;
@@ -145,17 +145,11 @@ body {
   display: block;
   height: 3px;
   margin-top: -1px;
+  z-index: 10;
 }
 
 .tabs-item:first-child {
   margin-left: 0;
-}
-
-.tabs-content {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-top-left-radius: 0;
-  padding: 10px;
 }
 
 .tabs-content-underlined {
@@ -227,4 +221,48 @@ body {
 .info-block2 {
   float:left;
   width: 50%;
+}
+
+.tabs-content {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  padding: 10px;
+
+
+  }
+.day-details {
+  float: left;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+}
+.day-details1 {
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.day-details2 {
+  padding: 10px 0 10px 0;
+  font-size: 54px;
+  margin: 0 auto;
+}
+
+.headlines {
+  padding-top: 45px;
+  float: left;
+  text-align: right;
+  color: #777;
+  font-size: 11px;
+}
+
+.wind-details {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 30px;
+  font-size: 11px;
+}
+
+.wind-details1 {
+  color: #777;
 }
