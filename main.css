@@ -3,6 +3,7 @@
 }
 
 body {
+  display: block;
   font-family: arial,helvetica,sans-serif;
   font-size: 0.9em;
   margin: 0;
@@ -14,6 +15,9 @@ body {
   clear: both;
 }
 
+.main-block {
+  display: inline-block;
+}
 .wrapper {
   background-color: #fff;
   padding: 0 15px;
@@ -133,7 +137,12 @@ body {
   margin-left: -1px;
   text-align: center;
   width: 94px;
+  
 }
+
+.tabs-item.active {
+ box-shadow: 0px 0px 5px 1px #999;
+ }
 
 .tabs-item.active::after {
   content: '';
@@ -143,8 +152,8 @@ body {
   width: 100%;
   left: 0;
   display: block;
-  height: 3px;
-  margin-top: -1px;
+  height: 10px;
+  margin-top: -5px;
   z-index: 10;
 }
 
@@ -167,7 +176,6 @@ body {
   color: red;
   font-size: 24px;
 }
-
 
 .image {
   background-image: url('https://sinst.fwdcdn.com/img/weatherImg/s2-m.png');
@@ -224,18 +232,24 @@ body {
 }
 
 .tabs-content {
+  box-shadow: 0px 0px 5px 1px #999;
   border: 1px solid #ccc;
   border-radius: 4px;
   border-top-left-radius: 0;
+  display: none;
   padding: 10px;
+}
 
+.tabs-content.active {
+  display: block;
+}
 
-  }
 .day-details {
   float: left;
   text-align: center;
   padding: 30px 30px 0 30px;
 }
+
 .day-details1 {
   font-size: 16px;
   margin: 0 auto;
@@ -245,6 +259,10 @@ body {
   padding: 10px 0 10px 0;
   font-size: 54px;
   margin: 0 auto;
+}
+
+.day-color {
+  color:red;
 }
 
 .headlines {

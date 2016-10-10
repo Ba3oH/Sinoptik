@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>HTML5</title>
@@ -9,11 +9,11 @@
 
     <div class="wrapper">
 
-    <header class="header clearfix">
-      <a href="#" class="logo">
-        <img src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo.png " alt="Logo">
-      </a>
-      <form class="form-search">
+      <header class="header clearfix">
+        <a href="#" class="logo">
+          <img src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo.png " alt="Logo">
+        </a>
+        <form class="form-search">
          <div class="clearfix">
           <input type="text" placeholder="Введіть назву міста">
           <button></button>
@@ -39,8 +39,8 @@
         </div>
       </div>
       <div class="main-block">
-         <ul class="tabs clearfix">
-          <li class="tabs-item active">
+        <ul class="tabs clearfix">
+          <li class="tabs-item active js-tab-item" data-id="1">
             <div>
               <span class="tabs-content-underlined">Понеділок</span>
             </div>
@@ -60,7 +60,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="2">
             <div>
               <span class="tabs-content-underlined">Вівторок</span>
             </div>
@@ -80,7 +80,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="3">
             <div>
               <span class="tabs-content-underlined">Середа</span>
             </div>
@@ -100,7 +100,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="4">
             <div>
               <span class="tabs-content-underlined">Четвер</span>
             </div>
@@ -120,7 +120,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="5">
             <div>
               <span class="tabs-content-underlined">П'ятниця</span>
             </div>
@@ -140,7 +140,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="6">
             <div>
               <span class="tabs-content-underlined">Субота</span>
             </div>
@@ -160,7 +160,7 @@
               </div>
             </div>
           </li>
-          <li class="tabs-item">
+          <li class="tabs-item js-tab-item" data-id="7">
             <div>
               <span class="tabs-content-underlined">Неділя</span>
             </div>
@@ -180,121 +180,798 @@
               </div>
             </div>
           </li>
-         </ul>
-      <div class="tabs-content clearfix">
-        <div class="tabs-content-left">
-          <div class="day-details">
-            <p class="day-details1">Понеділок</p>
-            <p class="day-details2">03</p>
-            <p class="day-details1">жовтня</p>
-            <div class="wind-details">
-              <span class="wind-details1">Схід</span>
-              07:11
-              <span class="wind-details1">Захід</span>
-              18:17
+        </ul>
+        <div class="tabs-content active clearfix js-tab-content" data-id="1">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Понеділок</p>
+              <p class="day-details2">03</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
             </div>
           </div>
-          <div class="headlines">
-            <p>Температура, С</p>
-            <p>відчувається як</p>
-            <p>Тиск, мм</p>
-            <p>Вологість, %</p>
-            <p>Вітер, м/сек</p>
-            <p>Ймовірність <br>опадів, %</p>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+        </div>        
+        <div class="tabs-content clearfix js-tab-content" data-id="2">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Вівторок</p>
+              <p class="day-details2">04</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="tabs-content-right">
-          <table>
-            <tr class="day-part">
-              <td colspan="2">ніч</td>
-              <td colspan="2">ранок</td>
-              <td colspan="2">день</td>
-              <td colspan="2">вечір</td>
-            </tr>
-            <tr class="time-part">
-              <td>0:00</td>
-              <td>3:00</td>
-              <td>6:00</td>
-              <td>9:00</td>
-              <td>12:00</td>
-              <td>15:00</td>
-              <td>18:00</td>
-              <td>21:00</td>
-            </tr>
-            <tr>
-              <td class="img-p img-position1"></td>
-              <td class="img-p img-position2"></td>
-              <td class="img-p img-position3"></td>
-              <td class="img-p img-position4"></td>
-              <td class="img-p img-position5"></td>
-              <td class="img-p img-position6"></td>
-              <td class="img-p img-position7"></td>
-              <td class="img-p img-position8"></td>
-            </tr>
-            <tr class="temperature">
-              <td>+6°</td>
-              <td>+5°</td>
-              <td>+4°</td>
-              <td>+5°</td>
-              <td>+6°</td>
-              <td>+7°</td>
-              <td>+8°</td>
-              <td>+7°</td>
-            </tr>
-            <tr class="temperature2">
-              <td>+1°</td>
-              <td>+1°</td>
-              <td>+2°</td>
-              <td>+1°</td>
-              <td>+2°</td>
-              <td>+3°</td>
-              <td>+3°</td>
-              <td>+3°</td>
-            </tr>
-            <tr class="day-part">
-              <td>742</td>
-              <td>740</td>
-              <td>741</td>
-              <td>742</td>
-              <td>743</td>
-              <td>744</td>
-              <td>744</td>
-              <td>746</td>
-            </tr>
-            <tr class="day-part">
-              <td>95</td>
-              <td>97</td>
-              <td>97</td>
-              <td>97</td>
-              <td>95</td>
-              <td>94</td>
-              <td>93</td>
-              <td>89</td>
-            </tr>
-            <tr class="day-part">
-              <td>6.0</td>
-              <td>5.0</td>
-              <td>4.0</td>
-              <td>4.0</td>
-              <td>4.0</td>
-              <td>4.0</td>
-              <td>5.0</td>
-              <td>7.2</td>
-            </tr>
-            <tr class="day-part">
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>79</td>
-            </tr>
-          </table>
+        <div class="tabs-content clearfix js-tab-content" data-id="3">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Середа</p>
+              <p class="day-details2">05</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
         </div>
-
-      </div>
+        <div class="tabs-content clearfix js-tab-content" data-id="4">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Четвер</p>
+              <p class="day-details2">06</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs-content clearfix js-tab-content" data-id="5">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">П'ятниця</p>
+              <p class="day-details2">07</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs-content clearfix js-tab-content" data-id="6">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Субота</p>
+              <p class="day-details2 day-color">08</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tabs-content clearfix js-tab-content" data-id="7">
+          <div class="tabs-content-left">
+            <div class="day-details">
+              <p class="day-details1">Неділя</p>
+              <p class="day-details2 day-color">09</p>
+              <p class="day-details1">жовтня</p>
+              <div class="wind-details">
+                <span class="wind-details1">Схід</span>
+                07:11
+                <span class="wind-details1">Захід</span>
+                18:17
+              </div>
+            </div>
+            <div class="headlines">
+              <p>Температура, С</p>
+              <p>відчувається як</p>
+              <p>Тиск, мм</p>
+              <p>Вологість, %</p>
+              <p>Вітер, м/сек</p>
+              <p>Ймовірність <br>опадів, %</p>
+            </div>
+          </div>
+          <div class="tabs-content-right">
+            <table>
+              <tr class="day-part">
+                <td colspan="2">ніч</td>
+                <td colspan="2">ранок</td>
+                <td colspan="2">день</td>
+                <td colspan="2">вечір</td>
+              </tr>
+              <tr class="time-part">
+                <td>0:00</td>
+                <td>3:00</td>
+                <td>6:00</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>18:00</td>
+                <td>21:00</td>
+              </tr>
+              <tr>
+                <td class="img-p img-position1"></td>
+                <td class="img-p img-position2"></td>
+                <td class="img-p img-position3"></td>
+                <td class="img-p img-position4"></td>
+                <td class="img-p img-position5"></td>
+                <td class="img-p img-position6"></td>
+                <td class="img-p img-position7"></td>
+                <td class="img-p img-position8"></td>
+              </tr>
+              <tr class="temperature">
+                <td>+6°</td>
+                <td>+5°</td>
+                <td>+4°</td>
+                <td>+5°</td>
+                <td>+6°</td>
+                <td>+7°</td>
+                <td>+8°</td>
+                <td>+7°</td>
+              </tr>
+              <tr class="temperature2">
+                <td>+1°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+1°</td>
+                <td>+2°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+                <td>+3°</td>
+              </tr>
+              <tr class="day-part">
+                <td>742</td>
+                <td>740</td>
+                <td>741</td>
+                <td>742</td>
+                <td>743</td>
+                <td>744</td>
+                <td>744</td>
+                <td>746</td>
+              </tr>
+              <tr class="day-part">
+                <td>95</td>
+                <td>97</td>
+                <td>97</td>
+                <td>97</td>
+                <td>95</td>
+                <td>94</td>
+                <td>93</td>
+                <td>89</td>
+              </tr>
+              <tr class="day-part">
+                <td>6.0</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>7.2</td>
+              </tr>
+              <tr class="day-part">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -302,7 +979,8 @@
       <p>Всі права належать &copy; 2010-2016 sinoptik.ua. Партнери проекту: Український Гідрометцентр, <img src="https://sinst.fwdcdn.com/img/partners/foreca_logo.png" alt="FORECA">.</p>
     </footer>
 
-    <div>
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="main.js"></script>
   </body>
-</html>
+  </html>
